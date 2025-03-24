@@ -164,15 +164,15 @@ char url_string[] = "http://api.thingspeak.com/update?api_key=4U0UPWF5MKAXSKGN&f
 //int tempoInvioDati = 1800; //Variabile per modificare il tempo di invio dei dati (in secondi)(es. 3600 = invio dei dati ogni H)
 
 // Invio dati ogni 30 minuti
-//int tempoInvioDati = 30*60; //Variabile per modificare il tempo di invio dei dati (in secondi)(es. 3600 = invio dei dati ogni H) => valore in minuti
+int tempoInvioDati = 30*60; //Variabile per modificare il tempo di invio dei dati (in secondi)(es. 3600 = invio dei dati ogni H) => valore in minuti
 
 // Invio dati per prove ogni 2 minuti
-int tempoInvioDati = 2*60; //Variabile per modificare il tempo di invio dei dati (in secondi)(es. 3600 = invio dei dati ogni H) => valore in minuti
+//int tempoInvioDati = 2*60; //Variabile per modificare il tempo di invio dei dati (in secondi)(es. 3600 = invio dei dati ogni H) => valore in minuti
 
 //Tempo Lettura dati
-//const unsigned long periodo = 1*60*1000; //Tempo lettura dati 1 minuto
+const unsigned long periodo = 1*60*1000L; //Tempo lettura dati 1 minuto
 
 //Tempo Lettura dati per prove 
-const unsigned long periodo = 1*30*1000; //Tempo lettura dati 30 sec
+//const unsigned long periodo = 1*30*1000L; //Tempo lettura dati 30 sec
 
 unsigned long tiempoAnterior = 0;

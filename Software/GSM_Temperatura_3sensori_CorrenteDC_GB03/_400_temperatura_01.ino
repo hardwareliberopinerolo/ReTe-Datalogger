@@ -116,11 +116,11 @@ delay(100);
 t2= (t2 + sensors.getTempC(outsideThermometer))/4;
 delay(100);
 
-t3 = (t3 + sensors.getTempC(outsideThermometer));
+t3 = (t3 + sensors.getTempC(Thermometer3));
 delay(100);
-t3 = (t3 + sensors.getTempC(outsideThermometer));
+t3 = (t3 + sensors.getTempC(Thermometer3));
 delay(100);
-t3= (t3 + sensors.getTempC(outsideThermometer))/4;
+t3= (t3 + sensors.getTempC(Thermometer3))/4;
 delay(100);
 
 

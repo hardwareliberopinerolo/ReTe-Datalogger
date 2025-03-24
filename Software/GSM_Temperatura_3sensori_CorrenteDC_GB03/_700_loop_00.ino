@@ -3,10 +3,10 @@ void loop() {
 
 
 //Sensore temperatura + Corrente-------------------------------
- if(millis()-tiempoAnterior>=periodo){  //Evalúa si ha transcurrido el periodo programado
+ if((unsigned long)(millis()-tiempoAnterior) > periodo){  //Evalúa si ha transcurrido el periodo programado
     legge_temperatura();
     legge_corrente();
-    tiempoAnterior=millis();  //Almacena el tiempo actual como referencia
+    tiempoAnterior = millis();  //Almacena el tiempo actual como referencia
     }
   
   if (seconds != myTimer.readTimer()) { //controllo dei valori ogni secondo

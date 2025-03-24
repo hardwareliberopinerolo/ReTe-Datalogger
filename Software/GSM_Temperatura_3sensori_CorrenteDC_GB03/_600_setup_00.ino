@@ -5,7 +5,7 @@ void setup() {
   pinMode(FONA_RST, OUTPUT);
   //pinMode(sensor, INPUT);
 
-  while (!Serial); //Attende che la porta seriale sia aperta
+ // while (!Serial); //Attende che la porta seriale sia aperta
   Serial.begin(9600);
   digitalWrite(greenLED, HIGH);
   delay (2000);
@@ -32,10 +32,18 @@ void setup() {
   myTimer.startTimer(); //start del timer all'accensione del dispositiv
   digitalWrite(greenLED, LOW);
 
-  Serial.print(F("Tempo invio dati: "));
-  Serial.println(tempoInvioDati);
+  Serial.print(F("Tempo lettura dati: "));
+  Serial.println(periodo);
 
 //Setup ACS712
 setup_corrente();
+
+
+//Leggi dati prima volta
+legge_temperatura();
+legge_corrente();
+
+  Serial.print(F("Tempo invio dati: "));
+  Serial.println(tempoInvioDati);
 
 }
